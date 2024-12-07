@@ -1,0 +1,110 @@
+:root {
+    --black: #121212;
+    --violet: #8e44ad;
+    --white: #ffffff;
+    --grey: #bbbbbb;
+    --violet-light: #a569bd;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--violet);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+header h1 a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+header h1 a:hover {
+    color: var(--violet-light); /* Changes to a lighter violet on hover */
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, var(--violet), var(--black));
+    color: var(--white);
+}
+
+#hero span {
+    color: var(--violet);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--violet);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: var(--violet-light); /* Lighter violet on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: var(--grey);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--violet);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: var(--white);
+}
+
+nav ul li a.active {
+    color: var(--violet-light);
+    font-weight: bold;
+    text-decoration: underline;
+}
